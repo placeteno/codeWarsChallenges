@@ -11,15 +11,6 @@ XO("zzoo") => false
  */
 
 function XO(str) {
-  const newStr = str.toLowerCase();
-  const x = newStr.split('').filter(x => x === 'x').length;
-  const o = newStr.split('').filter(o => o === 'o').length;
-  if (x === 0 && o === 0) return true;
-  else if (x === o) return true;
-  else return false;
-}
-
-function XO(str) {
   str = str.toLowerCase();
   return (
     str.split('').filter(x => x === 'x').length ===
